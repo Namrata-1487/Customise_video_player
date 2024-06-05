@@ -15,7 +15,7 @@
     <title>Video Player</title>
 </head>
 
-<body>
+<body class="container-fluid">
     <!-- designing of videoplayer -->
     <div class="container  p-0">
         <div class="wrapper">
@@ -34,7 +34,7 @@
                     <button type="button" class="btn volumebtn  ">
                         <i class="text-white fa-solid fa-volume-high"></i>
                     </button>
-                    <input type="range" class="range w-50 me-3 "min="0" max="100">
+                    <input type="range" class="range w-50 me-3 " value="0" min="0" max="100">
                     <div class="videotimer d-flex">
                         <p class="text-white currentTime m-0">
                             0.00
@@ -53,15 +53,15 @@
                 <div class="left d-flex">
 
                     <div class="dropup-center dropup">
-                        <button class="btn text-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        <button class="btn text-white dropdown-toggle content" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="text-white fa-regular fa-circle-play"></i> </button>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-item speed0.5 btn">0.5x</li>
-                            <li class="dropdown-item speed0.75 btn">0.75x</li>
-                            <li class="dropdown-item speed1 btn">1x</li>
-                            <li class="dropdown-item speed1.5 btn">1.5x</li>
-                            <li class="dropdown-item speed2 btn">2x</li>
+                        <ul class="dropdown-menu speed-option">
+                            <li data-speed="0.5" class="dropdown-item speed0.5 btn">0.5x</li>
+                            <li data-speed="0.75" class="dropdown-item speed0.75 btn">0.75x</li>
+                            <li data-speed="1" class="dropdown-item speed1 btn active" >1x</li>
+                            <li data-speed="1.5" class="dropdown-item speed1.5 btn">1.5x</li>
+                            <li data-speed="2" class="dropdown-item speed2 btn">2x</li>
                         </ul>
                     </div>
 

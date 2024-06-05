@@ -3,12 +3,11 @@ let mainVideo = document.getElementById("video"),
   progressBar = document.querySelector(".progress-bar"),
   fastforward = document.querySelector(".forward i"),
   fastbackward = document.querySelector(".backward i"),
-  speedzerofive = document.getElementsByClassName("speed0.5"),
-  speedzerosevenfive = document.getElementsByClassName("speed0.75"),
-  speednormal = document.getElementsByClassName("speed1"),
-  speedonefive = document.getElementsByClassName("speed1.5"),
-  speedtwo = document.getElementsByClassName("speed2"),
-  setvolume = document.querySelector(".left range");
+  speedoption = document.querySelector("speed-option"),
+  setvolume = document.querySelector(".left input"),
+  option = document.getElementsByClassName("dropdown-item"),
+  slower = document.getElementsByClassName("speed0.5"),
+  volumebtn = document.querySelector(".volumebtn i");
 
 // start of play pause btn scripting
 playPause.addEventListener("click", () => {
@@ -45,24 +44,7 @@ fastbackward.addEventListener("click", () => {
 // end
 
 // playback speed
-speedzerofive.addEventListener("click", () => {
-  mainVideo.currentTime -= 0.5;
-});
-speedzerosevenfive.addEventListener("click", () => {
-  mainVideo.currentTime -= 0.5;
-});
-speednormal.addEventListener("click", () => {
-  mainVideo.currentTime == 0;
-});
-speedonefive.addEventListener("click", () => {
-  mainVideo.currentTime += 1.5;
-});
-speedtwo.addEventListener("click", () => {
-  mainVideo.currentTime += 2;
-});
-// en of playback speed
-
-// start of volume
-setvolume.addEventListener("input", (e) => {
-  mainVideo.volume = e.target.value;
+slower.addEventListener("click", () => {
+  mainVideo.playbackRate -= 2;
+  alert(mainVideo.playbackRate);
 });
