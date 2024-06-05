@@ -52,7 +52,7 @@ video {
   color: white;
 }
 .progress-bar {
-  width: 50%;
+  width: 0%;
   /* z-index: 1; */
   overflow: visible !important;
   height: 100%;
