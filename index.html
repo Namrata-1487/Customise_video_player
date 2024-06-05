@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <title>Video Player</title>
+</head>
+
+<body>
+    <!-- designing of videoplayer -->
+    <div class="container  p-0">
+        <div class="wrapper">
+
+            <!-- adding progress bar -->
+            <div class="video-timeline ">
+                <div class="progress-area">
+                    <span class="text-white fw-bold ">0.00</span>
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+            <!-- end of progress bar -->
+            <!-- adding  buttons -->
+            <div class="d-flex p-0 justify-content-between m-3 align-items-center bottom-controls">
+                <div class="d-flex align-items-center justify-content-evenly left">
+                    <button type="button" class="btn volumebtn  ">
+                        <i class="text-white fa-solid fa-volume-high"></i>
+                    </button>
+                    <input type="range" class="w-50 me-3 ">
+                    <div class="videotimer d-flex">
+                        <p class="text-white currentTime m-0">
+                            0.00
+                        </p>
+                        <p class="text-white seperator m-0">/</p>
+                        <p class="text-white overallTime m-0">0.00</p>
+                    </div>
+                </div>
+                <div class="center d-flex justify-content-center align-items-center">
+                    <button type="submit" class="btn backward "><i
+                            class="text-white fa-solid fa-backward-step"></i></button>
+                    <button type="button" class="btn playPause "><i class="text-white fa-solid fa-play"></i></button>
+                    <button type="button" class="btn forward "><i
+                            class="text-white fa-solid fa-forward-step"></i></button>
+                </div>
+                <div class="left d-flex">
+
+                    <div class="dropup-center dropup">
+                        <button class="btn text-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="text-white fa-regular fa-circle-play"></i> </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item btn">0.5x</li>
+                            <li class="dropdown-item btn">0.75x</li>
+                            <li class="dropdown-item btn">1x</li>
+                            <li class="dropdown-item btn">1.5x</li>
+                            <li class="dropdown-item btn">2x</li>
+                        </ul>
+                    </div>
+
+                    <button type="button" class="btn playback-speed btn">
+                        <i class="text-white fa-solid fa-expand"></i>
+                    </button>
+
+
+
+                    <!-- end of dropdown btn  -->
+
+                </div>
+            </div>
+
+        </div>
+        <video src="./6394054-uhd_4096_2048_24fps.mp4" class="w-100 "></video>
+
+    </div>
+
+    <!-- end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
